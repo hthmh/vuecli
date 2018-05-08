@@ -11,7 +11,7 @@ const lintStyles = ['standard', 'airbnb']
  */
 exports.sortDependencies = function sortDependencies(data) {
   const packageJsonFile = path.join(
-    data.destDirName,
+    data.inPlace ? '' : data.destDirName,
     'package.json'
   )
   const packageJson = JSON.parse(fs.readFileSync(packageJsonFile))
