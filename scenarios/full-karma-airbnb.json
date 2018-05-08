@@ -4,11 +4,5 @@
   "description": "A Vue.js project",
   "author": "CircleCI",
   "build": "standalone",
-  "router": false,
-  "lint": true,
-  "lintConfig": "airbnb",
-  "unit": true,
-  "runner": "karma",
-  "e2e": true,
   "autoInstall": false
 }
