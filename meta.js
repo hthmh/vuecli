@@ -35,30 +35,19 @@ module.exports = {
     },
 
     prompts: {
-        build: {
-            when: 'isNotTest',
-            type: 'list',
-            message: 'Vue build',
-            choices: [{
-                    name: 'Runtime + Compiler: recommended for most users',
-                    value: 'standalone',
-                    short: 'standalone',
-                },
-                {
-                    name: 'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
-                    value: 'runtime',
-                    short: 'runtime',
-                },
-            ],
-        },
         autoInstall: {
             when: 'isNotTest',
             type: 'list',
             message: 'Should we run `npm install` for you after the project has been created? (recommended)',
             choices: [{
-                    name: 'Yes, use NPM',
+                    name: 'Yes, use cnpm',
                     value: 'cnpm',
                     short: 'cnpm',
+                },
+                {
+                    name: 'Yes, use NPM',
+                    value: 'npm',
+                    short: 'npm',
                 },
                 {
                     name: 'Yes, use Yarn',
@@ -74,8 +63,8 @@ module.exports = {
         },
     },
     filters: {
-       
-       
+
+
     },
     complete: function (data, {
         chalk
