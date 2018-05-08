@@ -2,7 +2,7 @@
   "noEscape": true,
   "name": "test",
   "description": "A Vue.js project",
-  "author": "CircleCI",
-  "build": "runtime",
+  "author": "pj <pj_panjian@163.com>",
+  "build": "standalone",
   "autoInstall": false
 }

@@ -2,7 +2,7 @@
   "noEscape": true,
   "name": "test-minimal",
   "description": "Testing the minimal template setup",
-  "author": "CircleCI",
+  "author": "pj <pj_panjian@163.com>",
   "build": "standalone",
   "autoInstall": false
 }
