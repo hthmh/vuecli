@@ -35,6 +35,17 @@ module.exports = {
     },
 
     prompts: {
+        name: {
+            when: 'isNotTest',
+            type: 'string',
+            required: true,
+            message: 'Project name',
+        },
+        author: {
+            when: 'isNotTest',
+            type: 'string',
+            message: 'Author',
+        },
         autoInstall: {
             when: 'isNotTest',
             type: 'list',
