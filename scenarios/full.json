@@ -2,7 +2,13 @@
   "noEscape": true,
   "name": "test",
   "description": "A Vue.js project",
-  "author": "pj <pj_panjian@163.com>",
-  "build": "standalone",
+  "author": "CircleCI",
+  "build": "runtime",
+  "router": false,
+  "lint": true,
+  "lintConfig": "standard",
+  "unit": true,
+  "runner": "jest",
+  "e2e": true,
   "autoInstall": false
 }
